@@ -1,0 +1,25 @@
+name: HopperNG
+version: '1.0.0'
+main: net.minedevhd.minehopper.MineHopper
+api-version: '1.21.10'
+author: MineDev_HD
+website: https://github.com/MineDevHDnet/HopperNG
+description: Configurable linked hoppers with filters, collection radius and multi-target routing.
+commands:
+  hopperng:
+    description: Manage and administrate HopperNG.
+    usage: /hopperng [manage|stats|reload|prune|help]
+    aliases: [minehopper]
+permissions:
+  hopperng.use:
+    description: Allows managing HopperNG hoppers.
+    default: true
+  hopperng.fasttick:
+    description: Allows enabling fast-tick mode on a hopper.
+    default: op
+  hopperng.admin:
+    description: Allows administrative HopperNG commands and settings.
+    default: op
+    children:
+      hopperng.use: true
+      hopperng.fasttick: true

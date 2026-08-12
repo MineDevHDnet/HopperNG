@@ -1,0 +1,17 @@
+# If empty, HopperNG can be used in every world. Use exact world names to restrict it.
+enabled-worlds: []
+# Safe default: vanilla hoppers remain vanilla until a player shift-right-clicks one.
+auto-register-on-place: false
+defaults:
+  transfer-amount: 12
+  collect-radius: 1
+  fast-tick: false
+intervals:
+  normal-ticks: 8
+  fast-ticks: 1
+limits:
+  max-collect-radius: 15
+  max-targets-per-hopper: 8
+visualizer:
+  duration-seconds: 30
+  period-ticks: 10
