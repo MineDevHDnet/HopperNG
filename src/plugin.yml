@@ -1,0 +1,5 @@
+name: MineHopper
+author: MineDev_HD
+version: 0.1.0
+main: net.minedevhd.minehopper.MineHopper
+commands:
